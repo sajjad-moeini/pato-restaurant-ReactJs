@@ -65,6 +65,7 @@ background-color: #fff;
 color: red;
 margin-top: 5%;
 transition: all .5s;
+font-weight: 500;
 animation: BtnAnim 1s ;
 }
 .home-carousel-item-btn:hover{

@@ -12,6 +12,10 @@
 
 .nav-item{
        font-weight: 500;
+       color: #fff !important;
+}
+.active{
+       color: red !important;
 }
 .navbar-toggler{
        border: 1px solid #fff;
