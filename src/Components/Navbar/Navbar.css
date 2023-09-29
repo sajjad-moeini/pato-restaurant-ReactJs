@@ -1,0 +1,14 @@
+#navbar{
+       transition: all .5s;
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+}
+.navbar-logo-container{
+       transition: all .5s;
+}
+
+.nav-item{
+       font-weight: 500;
+}
