@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-router-dom';
 export default function Navbarr() {
   const [logoYPadding, setLogoYPadding] = useState(4)
-  const [bgColor, setBgColor] = useState('rgba(65, 64, 64, 0.616)')
+  const [bgColor, setBgColor] = useState('rgba(65, 64, 64, 0.216)')
   const [navItemColor,setNavItemColor] =useState('#fff')
   const [logoSrc,setLogoSrc]=useState("img/logo.png.webp")
   window.document.addEventListener('scroll', () => {

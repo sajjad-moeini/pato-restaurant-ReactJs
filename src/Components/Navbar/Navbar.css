@@ -1,6 +1,7 @@
 #navbar{
        transition: all .5s;
        position: fixed;
+       z-index: 2;
        top: 0;
        left: 0;
        right: 0;
@@ -11,4 +12,7 @@
 
 .nav-item{
        font-weight: 500;
+}
+.navbar-toggler{
+       border: 1px solid #fff;
 }
