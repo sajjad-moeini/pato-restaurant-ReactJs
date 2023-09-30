@@ -50,3 +50,25 @@ letter-spacing: .3rem;
        transform: scale(1.2);
 }
 /* welcome-section finish */
+
+/* discover-section start */
+.discover-section{
+       height: 50vh;
+       background: url(../../../public/img/bg-intro-01.jpg.webp);
+       background-size: cover;
+       background-attachment: fixed;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+}
+.discover-section-subtitle{
+       font-family: Courgette;
+       color: red;
+       font-size: 2rem;
+}
+.discover-section-title{
+color: #f3f0f0;
+font-size: 4rem;
+}
+/* discover-section finish */
