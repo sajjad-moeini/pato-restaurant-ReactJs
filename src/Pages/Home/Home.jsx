@@ -1,8 +1,8 @@
 import React from 'react'
 import './Home.css'
 import HomeCarousel from '../../Components/HomeCarousel/HomeCarousel'
-import { Link } from 'react-router-dom'
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import Btn from '../../Components/Btn/Btn'
+import HomeRestaurantProperty from '../../Components/HomeRestaurantProperty/HomeRestaurantProperty'
 document.title = 'Home'
 export default function Home() {
 
@@ -20,9 +20,7 @@ export default function Home() {
           <p className="welcome-section-desc">
             Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
           </p>
-          <Link className='welcome-section-btn btn'>
-            OUR STORY <AiOutlineArrowRight />
-          </Link>
+       <Btn title={'OUR STORY'}/>
         </div>
         <div className="welcome-img-container col-12 col-md-6">
           <div className='welcome-img-wrapper'>
@@ -34,6 +32,8 @@ export default function Home() {
         <div className="h3 discover-section-subtitle">Discover</div>
         <div className="h1 discover-section-title">PATO PLACE</div>
       </section>
+      <HomeRestaurantProperty />
+      
     </>
   )
 }

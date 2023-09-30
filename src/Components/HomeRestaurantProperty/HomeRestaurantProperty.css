@@ -1,0 +1,28 @@
+.resturant-property-section{
+       padding: 5%;
+}
+.property-boxes-wrapper{
+       width: 85%;
+       margin: 0 auto;
+}
+.property-box-container{
+       margin-top: 3vh;
+}
+.property-box-img-container{
+       overflow: hidden;
+}
+.property-box-img{
+cursor: pointer;
+transition: all .7s;
+}
+.property-box-img:hover{
+       transform: scale(1.2);
+}
+.property-box-title{
+       letter-spacing: .1rem;
+       font-weight: 500;
+       font-size: 1.5rem;
+      text-transform: uppercase;
+      transition: all .7s;
+}
+.property-box-title:hover{color: red;}
