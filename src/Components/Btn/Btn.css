@@ -1,0 +1,11 @@
+.section-btn{
+       color: #333;
+       margin-top: 2vh;
+       border: 1px solid red;
+       transition: all .7s !important;
+}
+.section-btn:hover{
+      background-color: red;
+      color: aliceblue;
+      border: 0;
+}

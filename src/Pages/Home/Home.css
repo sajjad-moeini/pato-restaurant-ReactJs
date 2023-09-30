@@ -9,33 +9,12 @@
        justify-content: center;
        align-items: center;
 }
-.welcome-section-subtitle{
-       font-family: Courgette;
-       color: red;
-       font-weight: 600;
-       font-size: 1.7rem;
-}
-.welcome-section-title{
-font-size: 3.5rem;
-font-weight: 700;
-letter-spacing: .3rem;
-}
 .welcome-section-desc{
        color: #555;
        margin-top: 3vh;
        text-align: center;
 }
-.welcome-section-btn{
-       color: #333;
-       margin-top: 2vh;
-       border: 1px solid red;
-       transition: all .7s !important;
-}
-.welcome-section-btn:hover{
-      background-color: red;
-      color: aliceblue;
-      border: 0;
-}
+
 .welcome-img-container{
        padding: 10%;
 }
@@ -62,14 +41,19 @@ letter-spacing: .3rem;
        justify-content: center;
        align-items: center;
 }
-.discover-section-subtitle{
-       font-family: Courgette;
-       color: red;
-       font-size: 2rem;
-}
-.discover-section-title{
-color: #f3f0f0;
-font-size: 4rem;
-}
 /* discover-section finish */
 
+/* menu-demo start */
+.menu-demo{
+       margin: 0 auto;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: #f3f0f0;
+       padding: 5%;
+}
+.menu-all-images-container{
+       width: 85%;
+}
+/* menu-demo finish */

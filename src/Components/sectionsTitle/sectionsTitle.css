@@ -1,9 +1,11 @@
 .section-subtitle{
        font-family: Courgette;
        color: red;
-       font-size: 2rem;
+       font-weight: 600;
+       font-size: 1.7rem;
 }
 .section-title{
-color: #f3f0f0;
-font-size: 4rem;
+       font-size: 3.5rem;
+       font-weight: 700;
+       letter-spacing: .3rem;
 }

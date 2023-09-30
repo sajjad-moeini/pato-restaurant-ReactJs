@@ -16,7 +16,7 @@ export default function HomeRestaurantProperty() {
               <div className='row property-boxes-wrapper'>
              {properties.images.map((img,index)=>(
                       
-                             <div className='col-12 col-md-4 property-box-container'>
+                             <div key={index} className='col-12 col-md-4 property-box-container'>
                                     <div className='rounded-3 mb-4 property-box-img-container'>
                                            <img src={img} alt="intro-01" className='img-fluid property-box-img' />
                                     </div>
