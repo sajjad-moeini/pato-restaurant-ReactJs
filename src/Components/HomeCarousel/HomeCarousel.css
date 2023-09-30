@@ -1,7 +1,4 @@
-@font-face {
-       font-family: Courgette;
-       src: url(../../../public/fonts/Courgette-Regular.ttf);
-     }
+
 #home-first-carousel{
        height: 100vh !important;
 }
@@ -21,6 +18,30 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+}
+
+.home-carousel-item-subtitle{
+color: aliceblue;
+font-family: Courgette;
+font-size: 3.5rem;
+animation: subTitleAnim 2s ;
+}
+.home-carousel-item-title{
+       color: aliceblue;
+       font-size: 5.5rem;
+       animation: TitleAnim 2s ;
+}
+.home-carousel-item-btn{
+background-color: #fff;
+color: red;
+margin-top: 5%;
+transition: all .5s;
+font-weight: 500;
+animation: BtnAnim 1s ;
+}
+.home-carousel-item-btn:hover{
+       background-color: red;
+       color: #fff;
 }
 @keyframes subTitleAnim{
        0%{
@@ -48,27 +69,4 @@
        100%{
               transform: rotate(0deg);
        }
-}
-.home-carousel-item-subtitle{
-color: aliceblue;
-font-family: Courgette;
-font-size: 3.5rem;
-animation: subTitleAnim 2s ;
-}
-.home-carousel-item-title{
-       color: aliceblue;
-       font-size: 5.5rem;
-       animation: TitleAnim 2s ;
-}
-.home-carousel-item-btn{
-background-color: #fff;
-color: red;
-margin-top: 5%;
-transition: all .5s;
-font-weight: 500;
-animation: BtnAnim 1s ;
-}
-.home-carousel-item-btn:hover{
-       background-color: red;
-       color: #fff;
 }

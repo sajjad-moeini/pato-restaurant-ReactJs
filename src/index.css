@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+@font-face {
+  font-family: Courgette;
+  src: url(../../../public/fonts/Courgette-Regular.ttf);
+}
 ::-webkit-scrollbar {
   width: 5px;
 }

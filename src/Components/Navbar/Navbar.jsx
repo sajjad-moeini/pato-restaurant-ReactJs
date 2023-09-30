@@ -13,7 +13,7 @@ export default function Navbarr() {
     if (window.scrollY > 0) {
       setLogoYPadding(2)
       setBgColor('rgba(255,255,255,0.8)')
-      setNavItemColor('#444 !important')
+      setNavItemColor('#4c4c4c')
       setLogoSrc("img/logo2.png.webp")
     } else {
       setLogoYPadding(4)

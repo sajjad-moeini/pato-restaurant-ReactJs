@@ -12,7 +12,7 @@
 
 .nav-item{
        font-weight: 500;
-       color: #fff !important;
+       /* color: #4c4c4c !important; */
 }
 .active{
        color: red !important;
