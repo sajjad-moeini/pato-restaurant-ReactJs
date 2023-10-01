@@ -31,6 +31,11 @@ let store ={
               {name:'Sajjad Moeini',city:'Tehran',img:"img/avatar-01.jpg.webp"},
               {name:'Jack Sparow',city:'Caraib',img:"img/avatar-05.jpg.webp"},
               {name:'Marie Simmons',city:'New York',img:"img/avatar-04.jpg.webp"},
-       ]
+       ],
+       restaurantBlogBoxs :[
+              {img:"img/blog-01.jpg.webp",title:"BEST PLACES FOR WINE",subTitle:"Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.",badgeTitle:'17 Dec 2023'},
+              {img:"img/blog-02.jpg.webp",title:"EGGS AND CHEESE",subTitle:"Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat" ,badgeTitle:'15 Dec 2023'},
+              {img:"img/blog-03.jpg.webp",title:"STYLE THE WEDDING PARTY",subTitle:"Sed ornare ligula eget tortor tempor, quis porta tellus dictum.",badgeTitle:'7 Dec 2023'}
+       ],
 }
 export default store

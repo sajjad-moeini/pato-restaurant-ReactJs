@@ -26,3 +26,13 @@ transition: all .7s;
       transition: all .7s;
 }
 .property-box-title:hover{color: red;}
+.home-blog-badge{
+       padding: .2rem;
+       font-size: .8rem;
+       border-radius: .2rem;
+       bottom: 5%;
+       left: 3%;
+       background-color: rgba(6, 6, 6, 0.667);
+       z-index: 3;
+       color: aliceblue;
+}

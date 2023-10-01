@@ -3,7 +3,7 @@ import './Home.css'
 import HomeCarousel from '../../Components/HomeCarousel/HomeCarousel'
 import Btn from '../../Components/Btn/Btn'
 import SectionsTitle from '../../Components/sectionsTitle/sectionsTitle'
-import HomeRestaurantProperty from '../../Components/HomeRestaurantProperty/HomeRestaurantProperty'
+import HomeRestaurantPropertyOrBlogs from '../../Components/HomeRestaurantProperty/HomeRestaurantPropertyOrBlogs'
 import HomeMenuImagesContainer from '../../Components/HomeMenuImagesContainer/HomeMenuImagesContainer'
 import HomeEventUpcoming from '../../Components/HomeEventUpcoming/HomeEventUpcoming'
 import { Link } from 'react-router-dom'
@@ -34,7 +34,7 @@ export default function Home() {
         <SectionsTitle subTitle={'Discover'} title={'PATO PLACE'} titleColor={"#f3f0f0"} />
 
       </section>
-      <HomeRestaurantProperty />
+      <HomeRestaurantPropertyOrBlogs type={'property'} badge={false} btnTitle={'LEARN MORE'} />
       <section className='menu-demo'>
         <SectionsTitle subTitle={'Discover'} title={'OUR MENU'} titleColor={'#444'} />
         <div className="row menu-all-images-container mt-5">
@@ -95,6 +95,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+      <SectionsTitle title={'THE BLOG'} titleColor={'black'} subTitle={'Latest News'}/>
+      </div>
+      <HomeRestaurantPropertyOrBlogs type={'blogs'} badge={true} btnTitle={'CONTINUE READING'} />
     </>
   )
 }
