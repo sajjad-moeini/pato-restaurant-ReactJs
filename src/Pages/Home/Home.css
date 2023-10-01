@@ -86,3 +86,23 @@
        color: #f3f0f0;
 }
 /* home-reservtion finish  */
+.home-our-video-section{
+       height: 90vh;
+       width: 100%;
+       background: url(../../../public/img/bg-cover-video-02.jpg.webp);
+       background-size: cover;
+       background-attachment: fixed;
+}
+.home-our-video-wrapper{
+       background: #07070771;
+}
+.play-icon-container{
+       font-size: 4rem;
+       color: #f3f0f0;
+       cursor: pointer;
+       transition: all .5s;
+}
+.play-icon-container:hover{
+transform: scale(1.2);
+color: rgba(255, 0, 0, 0.767);
+}

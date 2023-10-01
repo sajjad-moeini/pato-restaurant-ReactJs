@@ -9,6 +9,7 @@ import HomeEventUpcoming from '../../Components/HomeEventUpcoming/HomeEventUpcom
 import { Link } from 'react-router-dom'
 import HomeReservationInputs from '../../Components/HomeReservationInputs/HomeReservationInputs'
 import HomeCustomeSayCarousel from '../../Components/HomeCustomeSayCarousel/HomeCustomeSayCarousel'
+import { AiFillPlayCircle } from 'react-icons/ai'
 document.title = 'Home'
 export default function Home() {
 
@@ -66,13 +67,13 @@ export default function Home() {
         <div className="row">
           <div className="col-12 col-lg-6">
             <div className='d-flex flex-column justify-content-center align-items-center'>
-            <SectionsTitle title={'BOOK TABLE'} subTitle={'Reservation'} titleColor={'black'} />
-            <div className="row px-5 pt-3">
-              <HomeReservationInputs />
+              <SectionsTitle title={'BOOK TABLE'} subTitle={'Reservation'} titleColor={'black'} />
+              <div className="row px-5 pt-3">
+                <HomeReservationInputs />
+              </div>
+              <Link to={'/reservtion'} className='btn home-reservtion-btn'>BOOK TABLE</Link>
             </div>
-            <Link to={'/reservtion'} className='btn home-reservtion-btn'>BOOK TABLE</Link>
-            </div>
-          
+
           </div>
           <div className="col-12 col-lg-6">
             <div className="home-reservtion-img-container mt-5 mx-auto">
@@ -85,7 +86,14 @@ export default function Home() {
       <div className="d-flex flex-column justify-content-center align-items-center py-5 mt-3">
         <SectionsTitle title={'REVIEW'} titleColor={'black'} subTitle={'Customers Say'} />
         <HomeCustomeSayCarousel />
-
+      </div>
+      <div className="home-our-video-section">
+        <div className="home-our-video-wrapper h-100 w-100  d-flex flex-column justify-content-center align-items-center">
+          <SectionsTitle title={'OUR VIDEO'} subTitle={'Discover'} titleColor={'#fff'} />
+          <div className='play-icon-container'>
+          <AiFillPlayCircle />
+          </div>
+        </div>
       </div>
     </>
   )
