@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 import HomeReservationInputs from '../../Components/HomeReservationInputs/HomeReservationInputs'
 import HomeCustomeSayCarousel from '../../Components/HomeCustomeSayCarousel/HomeCustomeSayCarousel'
 import { AiFillPlayCircle } from 'react-icons/ai'
+import { MdEmail} from 'react-icons/md'
 document.title = 'Home'
 export default function Home() {
 
@@ -17,18 +18,18 @@ export default function Home() {
     <>
       <HomeCarousel />
       <section className='welcome-section row'>
-        <div className="welcome-section-descriptions col-12 col-md-6">
+        <section className="welcome-section-descriptions col-12 col-md-6">
           <SectionsTitle subTitle={'Italian Restaurant'} title={'WELCOME'} titleColor={"black"} />
           <p className="welcome-section-desc">
             Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
           </p>
           <Btn title={'OUR STORY'} />
-        </div>
-        <div className="welcome-img-container col-12 col-md-6">
-          <div className='welcome-img-wrapper'>
+        </section>
+        <section className="welcome-img-container col-12 col-md-6">
+          <section className='welcome-img-wrapper'>
             <img src="img/our-story-01.jpg.webp" className='img-fluid welcome-img' alt="welcome-img" />
-          </div>
-        </div>
+          </section>
+        </section>
       </section>
       <section className="discover-section">
         <SectionsTitle subTitle={'Discover'} title={'PATO PLACE'} titleColor={"#f3f0f0"} />
@@ -37,68 +38,84 @@ export default function Home() {
       <HomeRestaurantPropertyOrBlogs type={'property'} badge={false} btnTitle={'LEARN MORE'} />
       <section className='menu-demo'>
         <SectionsTitle subTitle={'Discover'} title={'OUR MENU'} titleColor={'#444'} />
-        <div className="row menu-all-images-container mt-5">
-          <div className="col-12 col-md-4 mt-3">
+        <section className="row menu-all-images-container mt-5">
+          <section className="col-12 col-md-4 mt-3">
             <HomeMenuImagesContainer btnTitle={'LUNCH'} imgSrc={'img/our-menu-01.jpg.webp'} />
-          </div>
-          <div className="col-12 col-md-4 mt-3">
+          </section>
+          <section className="col-12 col-md-4 mt-3">
             <HomeMenuImagesContainer btnTitle={'DINNER'} imgSrc={'img/our-menu-05.jpg.webp'} />
-          </div>
-          <div className="col-12 col-md-4 mt-3">
-            <div className="h-50">
+          </section>
+          <section className="col-12 col-md-4 mt-3">
+            <section className="h-50">
               <HomeMenuImagesContainer btnTitle={'DRINK'} imgSrc={'img/our-menu-08.jpg.webp'} />
-            </div>
-            <div className="h-50 mt-3">
+            </section>
+            <section className="h-50 mt-3">
               <HomeMenuImagesContainer btnTitle={'STARTERS'} imgSrc={'img/our-menu-10.jpg.webp'} />
-            </div>
-          </div>
-        </div>
-        <div className="row menu-all-images-container mt-3">
-          <div className="col-12 col-md-8">
+            </section>
+          </section>
+        </section>
+        <section className="row menu-all-images-container mt-3">
+          <section className="col-12 col-md-8">
             <HomeMenuImagesContainer btnTitle={'HAPPY HOUR'} imgSrc={'img/our-menu-13.jpg.webp'} />
-          </div>
-          <div className="col-12 col-md-4">
+          </section>
+          <section className="col-12 col-md-4">
             <HomeMenuImagesContainer btnTitle={'DESSERT'} imgSrc={'img/our-menu-16.jpg.webp'} />
-          </div>
-        </div>
+          </section>
+        </section>
       </section>
       <HomeEventUpcoming />
-      <div className="home-reservtion-section">
-        <div className="row">
-          <div className="col-12 col-lg-6">
-            <div className='d-flex flex-column justify-content-center align-items-center'>
+      <section className="home-reservtion-section">
+        <section className="row">
+          <section className="col-12 col-lg-6">
+            <section className='d-flex flex-column justify-content-center align-items-center'>
               <SectionsTitle title={'BOOK TABLE'} subTitle={'Reservation'} titleColor={'black'} />
-              <div className="row px-5 pt-3">
+              <section className="row px-5 pt-3">
                 <HomeReservationInputs />
-              </div>
+              </section>
               <Link to={'/reservtion'} className='btn home-reservtion-btn'>BOOK TABLE</Link>
-            </div>
+            </section>
 
-          </div>
-          <div className="col-12 col-lg-6">
-            <div className="home-reservtion-img-container mt-5 mx-auto">
+          </section>
+          <section className="col-12 col-lg-6">
+            <section className="home-reservtion-img-container mt-5 mx-auto">
               <img src="img/booking-01.jpg.webp" className='img-fluid home-reservtion-img' alt="" />
-            </div>
-          </div>
-        </div>
+            </section>
+          </section>
+        </section>
 
-      </div>
-      <div className="d-flex flex-column justify-content-center align-items-center py-5 mt-3">
+      </section>
+      <section className="d-flex flex-column justify-content-center align-items-center py-5 mt-3">
         <SectionsTitle title={'REVIEW'} titleColor={'black'} subTitle={'Customers Say'} />
         <HomeCustomeSayCarousel />
-      </div>
-      <div className="home-our-video-section">
-        <div className="home-our-video-wrapper h-100 w-100  d-flex flex-column justify-content-center align-items-center">
+      </section>
+      <section className="home-our-video-section">
+        <section className="home-our-video-wrapper h-100 w-100  d-flex flex-column justify-content-center align-items-center">
           <SectionsTitle title={'OUR VIDEO'} subTitle={'Discover'} titleColor={'#fff'} />
-          <div className='play-icon-container'>
-          <AiFillPlayCircle />
-          </div>
-        </div>
-      </div>
-      <div className="d-flex flex-column justify-content-center align-items-center mt-5">
-      <SectionsTitle title={'THE BLOG'} titleColor={'black'} subTitle={'Latest News'}/>
-      </div>
+          <section className='play-icon-container'>
+            <AiFillPlayCircle />
+          </section>
+        </section>
+      </section>
+      <section className="d-flex flex-column justify-content-center align-items-center mt-5">
+        <SectionsTitle title={'THE BLOG'} titleColor={'black'} subTitle={'Latest News'} />
+      </section>
       <HomeRestaurantPropertyOrBlogs type={'blogs'} badge={true} btnTitle={'CONTINUE READING'} />
+      <section className=" home-special-signup mt-5 py-5">
+        <section className="row w-50 mx-auto d-flex-centring py-5">
+          <section className="col-12 col-md-4 d-flex-centring mt-3">
+            <section className="h4 home-special-signup-title">SPECIALS SIGN UP</section>
+          </section>
+          <section className="col-12 col-md-4 d-flex-centring mt-3 home-special-signup-input-container position-relative">
+            <input type="text" placeholder='Email' className='form-control w-100' />
+            <section className=' position-absolute special-sign-up-icon'>
+              <MdEmail />
+            </section>
+          </section>
+          <section className="col-12 col-md-4 d-flex-centring mt-3">
+            <Link className='btn home-special-signup-btn'>Sign-Up</Link>
+          </section>
+        </section>
+      </section>
     </>
   )
 }

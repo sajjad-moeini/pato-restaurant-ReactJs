@@ -1,3 +1,8 @@
+.d-flex-centring{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
 /* welcome-section start */
 .welcome-section{
        background-color: #f3f0f0;
@@ -106,3 +111,29 @@
 transform: scale(1.2);
 color: rgba(255, 0, 0, 0.767);
 }
+
+/* home-special-signup start */
+.home-special-signup{
+       background-color: #888;
+}
+.home-special-signup-title{
+       letter-spacing: .1rem;
+}
+.special-sign-up-icon{
+       right: 7%;
+       top: 7%;
+       font-size: 1.2rem;
+}
+.home-special-signup-input-container input{
+       padding: .5rem;
+}
+.home-special-signup-btn{
+       background-color: black;
+       color: #f3f0f0;
+       transition: all .5s;
+}
+.home-special-signup-btn:hover{
+       background-color: rgba(255, 0, 0, 0.767);
+       color: #f3f0f0;
+}
+/* home-special-signup start */
