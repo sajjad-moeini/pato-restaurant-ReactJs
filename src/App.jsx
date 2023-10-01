@@ -4,7 +4,7 @@ import Navbarr from './Components/Navbar/Navbar'
 import { useRoutes } from 'react-router-dom';
 import routes from './router';
 import { useState } from 'react'
-
+import Footer from './Components/Footer/Footer'
 
 function App() {
 const router = useRoutes(routes)
@@ -16,6 +16,7 @@ const router = useRoutes(routes)
 
       {router}
       </div>
+      <Footer/>
     </>
   )
 }
