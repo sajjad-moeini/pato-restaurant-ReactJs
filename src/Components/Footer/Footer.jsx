@@ -13,13 +13,13 @@ export default function Footer() {
    <section className="col-12 col-md-4 mt-5">
        <section className="h4 footer-title mb-4">CONTACT US</section>
        <ul className='footer-list'>
-              <li className='footer-item my-2'>
+              <li className='footer-item my-2 cp'>
                      <FaLocationDot />  Tehran-Gholhak
               </li>
-              <li className='footer-item my-2'>
+              <li className='footer-item my-2 cp'>
                      <FiPhoneCall />  (+98) 9195805686
               </li>
-              <li className='footer-item my-2'>
+              <li className='footer-item my-2 cp'>
                      <FiMail /> sajjadmoeini97@gmail.com
               </li>
        </ul>

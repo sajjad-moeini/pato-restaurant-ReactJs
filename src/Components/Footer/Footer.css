@@ -5,6 +5,9 @@
 .footer-title{
        color: aliceblue;
 }
+.cp{
+       cursor: pointer;
+}
 .footer-list{
        list-style: none;
        color: rgb(152, 154, 155);
