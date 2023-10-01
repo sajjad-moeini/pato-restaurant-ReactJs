@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './navbar.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -10,7 +10,12 @@ export default function Navbarr() {
   const [bgColor, setBgColor] = useState('rgba(65, 64, 64, 0.016)')
   const [navItemColor,setNavItemColor] =useState('#fff')
   const [logoSrc,setLogoSrc]=useState("img/logo.png.webp")
-  const navbarItems = store.navbarItems
+  const [navbarItems,setNavbarItems] = useState([])
+
+useEffect(()=>{
+  setNavbarItems([...store.navbarItems])
+},[])
+
   window.document.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
       setLogoYPadding(2)

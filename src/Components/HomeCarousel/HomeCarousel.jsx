@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import './HomeCarousel.css'
 import { Link, NavLink } from 'react-router-dom';
 import store from '../../store';
 
 export default function HomeCarousel() {
-const imgSrc = store.HomeCarouselImgSrc
+       const [imgSrc,setImgSrc] = useState([])
+       useEffect(()=>{
+              setImgSrc([...store.HomeCarouselImgSrc])
+       },[])
        return (
               <>
                      <Carousel id='home-first-carousel'>

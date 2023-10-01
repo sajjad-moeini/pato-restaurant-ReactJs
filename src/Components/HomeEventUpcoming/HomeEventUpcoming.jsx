@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useCountdown } from '../../Hooks/useCountdown'
 import Carousel from 'react-bootstrap/Carousel';
 import './HomeEventUpcoming.css'
@@ -8,20 +8,27 @@ import TimerBox from '../TimerBox/TimerBox';
 import Btn from '../Btn/Btn';
 
 export default function HomeEventUpcoming() {
-       const upcomingEvents = store.upcomingEventCarousel
        const [imgBadgeClass,setimgBadgeClass] =useState('')
-       window.onresize =()=>{if(document.body.scrollWidth < 998 ){
-              setimgBadgeClass('box-img-badge-horizontal')
-       }else{
-              setimgBadgeClass('box-img-badge-vertical')
-       }}
-       window.onload =()=>{
-              if(document.body.scrollWidth > 998 ){
-                     setimgBadgeClass('box-img-badge-vertical')
-              }else{
+       const [upcomingEvents,setupcomingEvents] = useState([])
+       useEffect(()=>{
+              setupcomingEvents([...store.upcomingEventCarousel])
+              window.onresize =()=>{if(document.body.scrollWidth < 998 ){
                      setimgBadgeClass('box-img-badge-horizontal')
+              }else{
+                     setimgBadgeClass('box-img-badge-vertical')
+              }}
+              window.onload =()=>{
+                     if(document.body.scrollWidth > 998 ){
+                            setimgBadgeClass('box-img-badge-vertical')
+                     }else{
+                            setimgBadgeClass('box-img-badge-horizontal')
+                     }
               }
-       }
+       },[])
+
+    
+       
+       
        return (
               <>
                      <Carousel id='upcoming-carousel'>
