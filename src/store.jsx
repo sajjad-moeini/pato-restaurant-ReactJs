@@ -18,6 +18,14 @@ let store ={
               {bgImg:'img/bg-event-01.jpg.webp',boxImg:'img/event-02.jpg.webp',title:'Wines during specific nights',desc:'Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia',badgeTitle:'08:00 PM Tuesday - 21 November 2018',boxAnim:'eventBoxAnim1 1s'},
               {bgImg:'img/bg-event-02.jpg.webp',boxImg:'img/event-06.jpg.webp',title:'Wines during specific nights',desc:'Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia',badgeTitle:'08:00 PM Tuesday - 21 November 2018',boxAnim:'eventBoxAnim2 1s'},
               {bgImg:'img/bg-event-04.jpg.webp',boxImg:'img/event-01.jpg.webp',title:'Wines during specific nights',desc:'Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia',badgeTitle:'08:00 PM Tuesday - 21 November 2018',boxAnim:'eventBoxAnim3 1s'},
+       ],
+       homeReservtionSection:[
+              {title:'Date',type:'input',inputType:'date'},
+              {title:'Name',type:'input',inputType:'text'},
+              {title:'Time',type:'option',value:'9 AM'},
+              {title:'Phone',type:'input',inputType:'phone'},
+              {title:'People',type:'option',value:'1 Person'},
+              {title:'Email',type:'input',inputType:'email'},
        ]
 }
 export default store

@@ -57,3 +57,32 @@
        width: 85%;
 }
 /* menu-demo finish */
+/* home-reservtion start  */
+.home-reservtion-section{
+       background-color: #d2d0d0a2;
+       padding-top: 7%;
+       padding-bottom: 7%;
+}
+.home-reservtion-img-container{
+       width: 50%;
+       border-radius: .7rem;
+       overflow: hidden;
+       margin-left: 10%;
+}
+.home-reservtion-img{
+       transition: all .5s;
+}
+.home-reservtion-img:hover{
+       transform: scale(1.2);
+}
+.home-reservtion-btn{
+       background-color: #333;
+       color: #f3f0f0;
+       transition: all .5s;
+       margin-top: 4%;
+}
+.home-reservtion-btn:hover{
+       background-color: rgba(255, 0, 0, 0.655);
+       color: #f3f0f0;
+}
+/* home-reservtion finish  */

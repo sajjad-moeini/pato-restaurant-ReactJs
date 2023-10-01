@@ -47,7 +47,7 @@ export default function HomeEventUpcoming() {
                                                                       <div className="col-12 col-lg-6 event-box-inf-container">
                                                                              <div className="h5 event-box-inf-title">
                                                                                     Wines during specific nights                              </div>
-                                                                             <p class="event-box-inf-desc">
+                                                                             <p className="event-box-inf-desc">
                                                                                     Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
                                                                              </p>
                                                                              <TimerBox />

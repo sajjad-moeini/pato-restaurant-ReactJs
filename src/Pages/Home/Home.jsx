@@ -6,20 +6,23 @@ import SectionsTitle from '../../Components/sectionsTitle/sectionsTitle'
 import HomeRestaurantProperty from '../../Components/HomeRestaurantProperty/HomeRestaurantProperty'
 import HomeMenuImagesContainer from '../../Components/HomeMenuImagesContainer/HomeMenuImagesContainer'
 import HomeEventUpcoming from '../../Components/HomeEventUpcoming/HomeEventUpcoming'
+import { Link } from 'react-router-dom'
+import HomeReservationInputs from '../../Components/HomeReservationInputs/HomeReservationInputs'
 document.title = 'Home'
 export default function Home() {
   const date = new Date()
+  console.log(date.toDateString())
 
   return (
     <>
       <HomeCarousel />
       <section className='welcome-section row'>
         <div className="welcome-section-descriptions col-12 col-md-6">
-<SectionsTitle subTitle={'Italian Restaurant'} title={'WELCOME'} titleColor={"black"} />
+          <SectionsTitle subTitle={'Italian Restaurant'} title={'WELCOME'} titleColor={"black"} />
           <p className="welcome-section-desc">
             Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
           </p>
-       <Btn title={'OUR STORY'}/>
+          <Btn title={'OUR STORY'} />
         </div>
         <div className="welcome-img-container col-12 col-md-6">
           <div className='welcome-img-wrapper'>
@@ -29,7 +32,7 @@ export default function Home() {
       </section>
       <section className="discover-section">
         <SectionsTitle subTitle={'Discover'} title={'PATO PLACE'} titleColor={"#f3f0f0"} />
-        
+
       </section>
       <HomeRestaurantProperty />
       <section className='menu-demo'>
@@ -60,7 +63,29 @@ export default function Home() {
         </div>
       </section>
       <HomeEventUpcoming />
-      
+      <div className="home-reservtion-section">
+        <div className="row">
+          <div className="col-12 col-lg-6">
+            <div className='d-flex flex-column justify-content-center align-items-center'>
+            <SectionsTitle title={'BOOK TABLE'} subTitle={'Reservation'} titleColor={'black'} />
+            <div className="row px-5 pt-3">
+              <HomeReservationInputs />
+            </div>
+            <Link to={'/reservtion'} className='btn home-reservtion-btn'>BOOK TABLE</Link>
+            </div>
+          
+          </div>
+          <div className="col-12 col-lg-6">
+            <div className="home-reservtion-img-container mt-5">
+              <img src="img/booking-01.jpg.webp" className='img-fluid home-reservtion-img' alt="" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div className=" d-flex flex-column justify-content-center align-items-center mt-5">
+        <SectionsTitle title={'REVIEW'} titleColor={'black'} subTitle={'Customers Say'} />
+      </div>
     </>
   )
 }
