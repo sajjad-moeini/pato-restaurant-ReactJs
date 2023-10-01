@@ -8,10 +8,9 @@ import HomeMenuImagesContainer from '../../Components/HomeMenuImagesContainer/Ho
 import HomeEventUpcoming from '../../Components/HomeEventUpcoming/HomeEventUpcoming'
 import { Link } from 'react-router-dom'
 import HomeReservationInputs from '../../Components/HomeReservationInputs/HomeReservationInputs'
+import HomeCustomeSayCarousel from '../../Components/HomeCustomeSayCarousel/HomeCustomeSayCarousel'
 document.title = 'Home'
 export default function Home() {
-  const date = new Date()
-  console.log(date.toDateString())
 
   return (
     <>
@@ -76,15 +75,17 @@ export default function Home() {
           
           </div>
           <div className="col-12 col-lg-6">
-            <div className="home-reservtion-img-container mt-5">
+            <div className="home-reservtion-img-container mt-5 mx-auto">
               <img src="img/booking-01.jpg.webp" className='img-fluid home-reservtion-img' alt="" />
             </div>
           </div>
         </div>
 
       </div>
-      <div className=" d-flex flex-column justify-content-center align-items-center mt-5">
+      <div className="d-flex flex-column justify-content-center align-items-center py-5 mt-3">
         <SectionsTitle title={'REVIEW'} titleColor={'black'} subTitle={'Customers Say'} />
+        <HomeCustomeSayCarousel />
+
       </div>
     </>
   )

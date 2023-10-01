@@ -26,6 +26,11 @@ let store ={
               {title:'Phone',type:'input',inputType:'phone'},
               {title:'People',type:'option',value:'1 Person'},
               {title:'Email',type:'input',inputType:'email'},
+       ],
+       HomeCustomerSay:[
+              {name:'Sajjad Moeini',city:'Tehran',img:"img/avatar-01.jpg.webp"},
+              {name:'Jack Sparow',city:'Caraib',img:"img/avatar-05.jpg.webp"},
+              {name:'Marie Simmons',city:'New York',img:"img/avatar-04.jpg.webp"},
        ]
 }
 export default store
