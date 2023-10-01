@@ -1,0 +1,17 @@
+.footer-container{
+       background-color: #333;
+       padding: 3% 0;
+}
+.footer-title{
+       color: aliceblue;
+}
+.footer-list{
+       list-style: none;
+       color: rgb(152, 154, 155);
+}
+.footer-gallary-img-container{
+       margin-right: -1.5%;
+}
+.footer-gallary-img{
+       cursor: pointer;
+}

@@ -16,11 +16,11 @@ export default function HomeCarousel() {
                                    imgSrc.map((img,index)=>(
                                           <Carousel.Item key={index} className='home-carousel-item'>
                                           <img src={img} className='home-first-carousel-img' alt={`slider${index}`} />
-                                          <div className='home-carousel-item-inner-box'>
-                                                 <div className='h2 home-carousel-item-subtitle'>Welcome to</div>
-                                                 <div className='h1 home-carousel-item-title'>Pato Place</div>
+                                          <section className='home-carousel-item-inner-box'>
+                                                 <section className='h2 home-carousel-item-subtitle'>Welcome to</section>
+                                                 <section className='h1 home-carousel-item-title'>Pato Place</section>
                                                  <Link className='btn home-carousel-item-btn'>LOOK MENU</Link>
-                                          </div>
+                                          </section>
                                    </Carousel.Item>
                                    ))
                             }

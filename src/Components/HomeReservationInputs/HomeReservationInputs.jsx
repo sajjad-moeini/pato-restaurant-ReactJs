@@ -11,19 +11,19 @@ export default function HomeReservationInputs() {
     {inputs.map((input,index)=>{
        if(input.type == 'input'){
               return(
-              <div key={index} className="col-12 col-md-6 p-3">
+              <section key={index} className="col-12 col-md-6 p-3">
                 <span>{input.title}</span>
                 <input type={input.inputType} className='form-control mt-1'  />
-              </div>
+              </section>
               )
        }else if(input.type == 'option'){
               return(
-              <div key={index} className="col-12 col-md-6 p-3">
+              <section key={index} className="col-12 col-md-6 p-3">
               <span>{input.title}</span>
                 <select disabled className='w-100 mt-1'>
                   <option className='form-control ' value="-1">{input.value}</option>
                 </select>
-              </div>
+              </section>
               )
        }else{return null}
     })}

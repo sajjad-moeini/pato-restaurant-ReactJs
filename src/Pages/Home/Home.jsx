@@ -11,6 +11,7 @@ import HomeReservationInputs from '../../Components/HomeReservationInputs/HomeRe
 import HomeCustomeSayCarousel from '../../Components/HomeCustomeSayCarousel/HomeCustomeSayCarousel'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import { MdEmail} from 'react-icons/md'
+import Footer from '../../Components/Footer/Footer'
 document.title = 'Home'
 export default function Home() {
 
@@ -116,6 +117,7 @@ export default function Home() {
           </section>
         </section>
       </section>
+      <Footer />
     </>
   )
 }

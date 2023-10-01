@@ -35,37 +35,37 @@ export default function HomeEventUpcoming() {
                             {
                                    upcomingEvents.map((event, index) => (
                                           <Carousel.Item key={index} className='upcoming-carousel-item' >
-                                                 <div className="upcoming-carousel-container " >
+                                                 <section className="upcoming-carousel-container " >
                                                         <img src={event.bgImg} alt="bg" />
-                                                 </div>
-                                                 <div className="upcoming-box-container ">
+                                                 </section>
+                                                 <section className="upcoming-box-container ">
                                                         <SectionsTitle  subTitle={'Upcoming'} title={'EVENTS'} titleColor={'#fff'} />
-                                                        <div className="upcoming-event-box mt-5" style={{animation: event.boxAnim}}>
-                                                               <div className="row">
-                                                                      <div className="col-12 col-lg-6 h-100 position-relative overflow-hidden">
-                                                                             <div className="h-100 w-100">
+                                                        <section className="upcoming-event-box mt-5" style={{animation: event.boxAnim}}>
+                                                               <section className="row">
+                                                                      <section className="col-12 col-lg-6 h-100 position-relative overflow-hidden">
+                                                                             <section className="h-100 w-100">
                                                                              <img src={event.boxImg} className='img-fluid h-100 w-100' alt="boxImg" />
-                                                                             </div>
+                                                                             </section>
                                                                              
                                                                              <span className={`box-img-badge ${imgBadgeClass}`}>
                                                                                     {event.badgeTitle}
                                                                              </span>
-                                                                      </div>
-                                                                      <div className="col-12 col-lg-6 event-box-inf-container">
-                                                                             <div className="h5 event-box-inf-title">
-                                                                                    Wines during specific nights                              </div>
+                                                                      </section>
+                                                                      <section className="col-12 col-lg-6 event-box-inf-container">
+                                                                             <section className="h5 event-box-inf-title">
+                                                                                    Wines during specific nights                              </section>
                                                                              <p className="event-box-inf-desc">
                                                                                     Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
                                                                              </p>
                                                                              <TimerBox />
-                                                                             <div className="my-4">
+                                                                             <section className="my-4">
                                                                              <Btn title={'VIEW DETAILES '} />
-                                                                             </div>
-                                                                      </div>
-                                                               </div>
-                                                        </div>
+                                                                             </section>
+                                                                      </section>
+                                                               </section>
+                                                        </section>
 
-                                                 </div>
+                                                 </section>
                                           </Carousel.Item>
                                    ))
                             }

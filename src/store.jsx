@@ -37,5 +37,19 @@ let store ={
               {img:"img/blog-02.jpg.webp",title:"EGGS AND CHEESE",subTitle:"Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat" ,badgeTitle:'15 Dec 2023'},
               {img:"img/blog-03.jpg.webp",title:"STYLE THE WEDDING PARTY",subTitle:"Sed ornare ligula eget tortor tempor, quis porta tellus dictum.",badgeTitle:'7 Dec 2023'}
        ],
+       footerImgSrc:[
+              "img/photo-gallery-01.jpg.webp",
+              "img/photo-gallery-02.jpg.webp",
+              "img/photo-gallery-03.jpg.webp",
+              "img/photo-gallery-04.jpg.webp",
+              "img/photo-gallery-05.jpg.webp",
+              "img/photo-gallery-06.jpg.webp",
+              "img/photo-gallery-07.jpg.webp",
+              "img/photo-gallery-08.jpg.webp",
+              "img/photo-gallery-09.jpg.webp",
+              "img/photo-gallery-10.jpg.webp",
+              "img/photo-gallery-11.jpg.webp",
+              "img/photo-gallery-12.jpg.webp",
+       ]
 }
 export default store
