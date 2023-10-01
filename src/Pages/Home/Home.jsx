@@ -5,8 +5,10 @@ import Btn from '../../Components/Btn/Btn'
 import SectionsTitle from '../../Components/sectionsTitle/sectionsTitle'
 import HomeRestaurantProperty from '../../Components/HomeRestaurantProperty/HomeRestaurantProperty'
 import HomeMenuImagesContainer from '../../Components/HomeMenuImagesContainer/HomeMenuImagesContainer'
+import HomeEventUpcoming from '../../Components/HomeEventUpcoming/HomeEventUpcoming'
 document.title = 'Home'
 export default function Home() {
+  const date = new Date()
 
   return (
     <>
@@ -14,12 +16,6 @@ export default function Home() {
       <section className='welcome-section row'>
         <div className="welcome-section-descriptions col-12 col-md-6">
 <SectionsTitle subTitle={'Italian Restaurant'} title={'WELCOME'} titleColor={"black"} />
-          {/* <div className="h2 welcome-section-subtitle">
-            Italian Restaurant
-          </div>
-          <div className="h1 welcome-section-title">
-            WELCOME
-          </div> */}
           <p className="welcome-section-desc">
             Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
           </p>
@@ -63,6 +59,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <HomeEventUpcoming />
       
     </>
   )

@@ -9,7 +9,6 @@ export default function HomeRestaurantProperty() {
        const[images] = useState(properties.images)
        const[titles] = useState(properties.titles)
        const[subTitles] = useState(properties.subTitles)
-       console.log(properties)
        return (
             
               <div className='resturant-property-section'>
