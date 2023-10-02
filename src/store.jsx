@@ -3,7 +3,7 @@ let store = {
               { title: 'HOME', titleSrc: '/' },
               { title: 'MENU', titleSrc: '/menu' },
               { title: 'RESERVATION', titleSrc: '/reservation' },
-              { title: 'GALLARY', titleSrc: '/gallary' },
+              { title: 'GALLARY', titleSrc: '/gallary/allPhotos' },
               { title: 'ABOUT', titleSrc: '/about' },
               { title: 'BLOG', titleSrc: '/blog' },
               { title: 'CONTACT', titleSrc: '/contact' },
@@ -112,12 +112,19 @@ let store = {
               { title: 'Phone', type: 'input', inputType: 'phone' },
               { title: 'Email', type: 'input', inputType: 'email' },
        ],
+       gallaryMenuItems: [
+              { path: './allPhotos', title: 'ALL PHOTO' },
+              { path: './interior', title: 'INTERIOR' },
+              { path: './food', title: 'FOOD' },
+              { path: './events', title: 'EVENTS' },
+              { path: './vipGhests', title: 'VIP GUESTS' },
+       ],
        menuItems: {
-              all: ['img/Gallary/photo-gallery-18.jpg.webp','img/Gallary/photo-gallery-19.jpg.webp','img/Gallary/photo-gallery-20.jpg.webp','img/Gallary/photo-gallery-14.jpg.webp','img/Gallary/photo-gallery-16.jpg,webp','img/Gallary/photo-gallery-17.jpg.webp','img/Gallary/photo-gallery-13.jpg.webp','img/Gallary/photo-gallery-15.jpg.webp','img/Gallary/photo-gallery-21.jpg.webp'],
-              interior: ['img/Gallary/photo-gallery-18.jpg.webp','img/Gallary/photo-gallery-19.jpg.webp','img/Gallary/photo-gallery-20.jpg.webp'],
-              food: ['img/Gallary/photo-gallery-14.jpg.webp','img/Gallary/photo-gallery-16.jpg,webp','img/Gallary/photo-gallery-17.jpg.webp'],
-              events: ['img/Gallary/photo-gallery-13.jpg.webp','img/Gallary/photo-gallery-15.jpg.webp','img/Gallary/photo-gallery-21.jpg.webp'],
-              vipGhests: ['img/Gallary/photo-gallery-13.jpg.webp','img/Gallary/photo-gallery-18.jpg.webp'],
+              all: ['img/Gallary/photo-gallery-18.jpg.webp', 'img/Gallary/photo-gallery-19.jpg.webp', 'img/Gallary/photo-gallery-20.jpg.webp', 'img/Gallary/photo-gallery-14.jpg.webp', 'img/Gallary/photo-gallery-16.jpg.webp', 'img/Gallary/photo-gallery-17.jpg.webp', 'img/Gallary/photo-gallery-13.jpg.webp', 'img/Gallary/photo-gallery-15.jpg.webp', 'img/Gallary/photo-gallery-21.jpg.webp'],
+              interior: ['img/Gallary/photo-gallery-18.jpg.webp', 'img/Gallary/photo-gallery-19.jpg.webp', 'img/Gallary/photo-gallery-20.jpg.webp'],
+              food: ['img/Gallary/photo-gallery-14.jpg.webp', 'img/Gallary/photo-gallery-16.jpg.webp', 'img/Gallary/photo-gallery-17.jpg.webp'],
+              events: ['img/Gallary/photo-gallery-13.jpg.webp', 'img/Gallary/photo-gallery-15.jpg.webp', 'img/Gallary/photo-gallery-21.jpg.webp'],
+              vipGhests: ['img/Gallary/photo-gallery-13.jpg.webp', 'img/Gallary/photo-gallery-18.jpg.webp'],
        }
 
 

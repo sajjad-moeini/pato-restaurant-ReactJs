@@ -5,7 +5,20 @@
        font-size: 3.5rem;
        font-weight: 600;
 }
-.gallary-images-container{
-       width: 100%;
-       height: 50vh;
+.active-gallary-nav-item{
+       background-color: #111;
+       color: #fff !important;
+}
+.gallary-nav-item{
+       letter-spacing: .1rem;
+       color: #111;
+       font-weight: 500;
+       padding: .4rem .6rem;
+       margin: .5vh 1.5vw;
+       border-radius: .5rem;
+       transition: all .5s;
+}
+.gallary-nav-item:hover{
+       background-color: #111;
+       color: #fff;
 }

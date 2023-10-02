@@ -11,9 +11,15 @@ export default function Navbarr() {
   const [navItemColor,setNavItemColor] =useState('#fff')
   const [logoSrc,setLogoSrc]=useState("img/logo.png.webp")
   const [navbarItems,setNavbarItems] = useState([])
-
-useEffect(()=>{
-  setNavbarItems([...store.navbarItems])
+  const [isGallaryPage, setIsGallaryPage] = useState( false )
+  window.onload = () => {
+    if (document.title == 'Gallary') {
+      setIsGallaryPage(true)
+    }
+  }
+  
+  useEffect(()=>{
+    setNavbarItems([...store.navbarItems])
 },[])
 
   window.document.addEventListener('scroll', () => {
@@ -21,12 +27,20 @@ useEffect(()=>{
       setLogoYPadding(2)
       setBgColor('rgba(255,255,255,0.8)')
       setNavItemColor('#4c4c4c')
-      setLogoSrc("img/logo2.png.webp")
+      if(document.title == 'Gallary'){
+        setLogoSrc("../img/logo2.png.webp")
+      }else{
+        setLogoSrc("../img/logo2.png.webp")
+      }
     } else {
       setLogoYPadding(4)
       setBgColor('rgba(65, 64, 64, 0.016)')
       setNavItemColor('#fff')
-      setLogoSrc("img/logo.png.webp")
+      if(document.title == 'Gallary'){
+        setLogoSrc("../img/logo.png.webp")
+      }else{
+        setLogoSrc("../img/logo.png.webp")
+      }
     }
   })
   return (
@@ -34,7 +48,7 @@ useEffect(()=>{
       <Navbar expand="lg" id='navbar' style={{ background: bgColor }}>
         <Container>
           <Navbar.Brand href="#home" className={`navbar-logo-container py-${logoYPadding}`}>
-            <img src={logoSrc} id='logo' alt="logo" />
+            <img src={isGallaryPage ? `../${logoSrc}`:logoSrc} id='logo' alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse id="main-navbar">

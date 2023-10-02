@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 import store from '../../store'
 import HomeCarousel from '../../Components/HomeCarousel/HomeCarousel'
@@ -12,8 +12,10 @@ import HomeReservationInputs from '../../Components/HomeReservationInputs/HomeRe
 import HomeCustomeSayCarousel from '../../Components/HomeCustomeSayCarousel/HomeCustomeSayCarousel'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import SpecialSIgnUp from '../../Components/SpecialSIgnUp/SpecialSIgnUp'
-document.title = 'Home'
 export default function Home() {
+  useEffect(()=>{
+    document.title = 'Home'
+  },[])
 
   return (
     <>
