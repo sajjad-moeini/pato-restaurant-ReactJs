@@ -1,0 +1,29 @@
+.reservation-header-bg{
+       width: 100%;
+       height: 60vh;
+       background: url(../../../public/img/reservation/bg-title-page-02.jpg.webp);
+       background-size: cover;
+       font-size: 2.5rem;
+}
+.reservation-book-table{
+       background-color: #9999996f;
+       padding: 7% 0;
+}
+.inputs-container{
+       width: 60%;
+}
+.home-reservtion-btn{
+       background-color: #333;
+       color: #f3f0f0;
+       transition: all .5s;
+       margin-top: 4%;
+}
+.reservation-rules-container{
+       margin-top: 15vh;
+       width: 80%;
+}
+.reservation-title{
+       font-size: 1.3rem;
+       font-weight: 500;
+       margin: 3vh 0;
+}

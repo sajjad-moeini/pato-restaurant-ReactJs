@@ -94,7 +94,16 @@ let store ={
                      {name:'PINE NUT SBRISALONA',price:'45.09',desc:'Sed fermentum eros vitae eros',imgSrc:'img/menuPage/dinner-05.jpg.webp'},
                      {name:'TEMPOR MALESUADA',price:'12.75',desc:'Duis massa nibh porttitor nec imperdiet eget',imgSrc:'img/menuPage/dinner-06.jpg.webp'},
               ],
-             }
+             },
+
+             reservationInputs:[
+              {title:'Date',type:'input',inputType:'date'},
+              {title:'Time',type:'option',value:'9 AM'},
+              {title:'People',type:'option',value:'1 Person'},
+              {title:'Name',type:'input',inputType:'text'},
+              {title:'Phone',type:'input',inputType:'phone'},
+              {title:'Email',type:'input',inputType:'email'},
+       ],
        
 
 }

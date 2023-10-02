@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import store from '../../store'
 import HomeCarousel from '../../Components/HomeCarousel/HomeCarousel'
 import Btn from '../../Components/Btn/Btn'
 import SectionsTitle from '../../Components/sectionsTitle/sectionsTitle'
@@ -70,7 +71,8 @@ export default function Home() {
             <section className='d-flex flex-column justify-content-center align-items-center'>
               <SectionsTitle title={'BOOK TABLE'} subTitle={'Reservation'} titleColor={'black'} />
               <section className="row px-5 pt-3">
-                <HomeReservationInputs />
+                {store.homeReservtionSection && <HomeReservationInputs inputs={store.homeReservtionSection} col={6} /> }
+                
               </section>
               <Link to={'/reservtion'} className='btn home-reservtion-btn'>BOOK TABLE</Link>
             </section>
