@@ -3,20 +3,20 @@ import './MenuItems.css'
 export default function MenuItems({ title, foods }) {
        return (
               <>
-                     <div className="h3 ls mt-5">{title}</div>
+                     <section className="h3 ls mt-5">{title}</section>
                      {foods.map((food, index) => (
                             <section className='food-box mt-4' key={index}>
-                                   <div className="d-flex w-75">
-                                          <div className=" food-name ls d-flex-centring ">
+                                   <section className="d-flex w-75">
+                                          <section className=" food-name ls d-flex-centring ">
                                                  {food.name}
-                                          </div>
-                                          <div className='dots-container d-flex-centring pt-2'>
+                                          </section>
+                                          <section className='dots-container d-flex-centring pt-2'>
                                           <p className='dots ls'>............................................................................................................</p>
-                                          </div>
-                                          <div className="food-price d-flex-centring">
+                                          </section>
+                                          <section className="food-price d-flex-centring">
                                                  ${food.price}
-                                          </div>
-                                   </div>
+                                          </section>
+                                   </section>
                                    <span className="food-infos text-secondary">
                                           {food.desc}
                                    </span>

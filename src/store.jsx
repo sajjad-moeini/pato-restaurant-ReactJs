@@ -78,6 +78,14 @@ let store ={
                      {name:'SCELERISQUE',price:'19.35',desc:'Sed fermentum eros vitae eros'},
                      {name:'CRAS MAXIMUS',price:'5.79',desc:'Duis pharetra ligula at urna dignissim'},
               ]},
+              lunch:[
+                     {name:'SED VARIUS',price:'29.79',desc:'Aenean pharetra tortor dui in pellentesque',imgSrc:'img/menuPage/lunch-01.jpg.webp'},
+                     {name:'TEMPUS ALIQUET',price:'45.09',desc:'Aenean condimentum ante erat',imgSrc:'img/menuPage/lunch-02.jpg.webp'},
+                     {name:'DUIS MASSA',price:'12.75',desc:'Proin lacinia nisl ut ultricies posuere nulla',imgSrc:'img/menuPage/lunch-03.jpg.webp'},
+                     {name:'SBRISALONA',price:'29.79',desc:'Proin lacinia nisl ut ultricies posuere nulla',imgSrc:'img/menuPage/lunch-04.jpg.webp'},
+                     {name:'CRAS EGET MAGNA',price:'45.09',desc:'Sed fermentum eros vitae eros',imgSrc:'img/menuPage/lunch-05.jpg.webp'},
+                     {name:'NULLAM MAXIMUS',price:'12.75',desc:'Duis massa nibh porttitor nec imperdiet eget',imgSrc:'img/menuPage/lunch-06.jpg.webp'},
+              ],
              }
        
 
