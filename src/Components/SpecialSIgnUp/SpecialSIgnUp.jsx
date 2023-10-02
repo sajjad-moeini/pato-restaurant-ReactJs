@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function SpecialSIgnUp() {
   return (
-       <section className=" home-special-signup mt-5 py-5">
+       <section className=" home-special-signup  py-5">
        <section className="row w-50 mx-auto d-flex-centring py-5">
          <section className="col-12 col-md-4 d-flex-centring mt-3">
            <section className="h4 home-special-signup-title">SPECIALS SIGN UP</section>

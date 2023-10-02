@@ -22,3 +22,9 @@
        background-size: cover;
        background-attachment: fixed;
 }
+.dinner-bg{
+       height: 50vh;
+       background: url(../../../public/img/menuPage/header-menu-02.jpg.webp);
+       background-size: cover;
+       background-attachment: fixed;
+}

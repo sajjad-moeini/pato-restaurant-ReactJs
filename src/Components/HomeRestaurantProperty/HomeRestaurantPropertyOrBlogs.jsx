@@ -15,7 +15,7 @@ export default function HomeRestaurantPropertyOrBoxes({type,badge,btnTitle}) {
        },[])
        return (
             
-              <section className='resturant-property-section'>
+              <section className='resturant-property-section mb-5'>
               <section className='row property-boxes-wrapper'>
              {properties.map((property,index)=>(
                       

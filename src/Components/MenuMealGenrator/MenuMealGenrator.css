@@ -1,8 +1,12 @@
 .meals-container{
+       background-color: #99999923;
+}
+.meals-wrapper{
        width: 85%;
 padding: 7% 0;
 padding-left: 10%;
 }
+
 .meal-img-container{
        overflow: hidden;
        border-radius: 1.1vw;

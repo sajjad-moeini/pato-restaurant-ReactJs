@@ -86,6 +86,14 @@ let store ={
                      {name:'CRAS EGET MAGNA',price:'45.09',desc:'Sed fermentum eros vitae eros',imgSrc:'img/menuPage/lunch-05.jpg.webp'},
                      {name:'NULLAM MAXIMUS',price:'12.75',desc:'Duis massa nibh porttitor nec imperdiet eget',imgSrc:'img/menuPage/lunch-06.jpg.webp'},
               ],
+              dinner:[
+                     {name:'MAECENAS TRISTIQUE',price:'29.79',desc:'Aenean pharetra tortor dui in pellentesque',imgSrc:'img/menuPage/dinner-01.jpg.webp'},
+                     {name:'PINE NUT SBRISALONA',price:'45.09',desc:'Aenean condimentum ante erat',imgSrc:'img/menuPage/dinner-02.jpg.webp'},
+                     {name:'SUSPENDISSE EU',price:'12.75',desc:'Proin lacinia nisl ut ultricies posuere nulla',imgSrc:'img/menuPage/dinner-03.jpg.webp'},
+                     {name:'CRAS MAXIMUS',price:'29.79',desc:'Proin lacinia nisl ut ultricies posuere nulla',imgSrc:'img/menuPage/dinner-04.jpg.webp'},
+                     {name:'PINE NUT SBRISALONA',price:'45.09',desc:'Sed fermentum eros vitae eros',imgSrc:'img/menuPage/dinner-05.jpg.webp'},
+                     {name:'TEMPOR MALESUADA',price:'12.75',desc:'Duis massa nibh porttitor nec imperdiet eget',imgSrc:'img/menuPage/dinner-06.jpg.webp'},
+              ],
              }
        
 
