@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 import HomeReservationInputs from '../../Components/HomeReservationInputs/HomeReservationInputs'
 import HomeCustomeSayCarousel from '../../Components/HomeCustomeSayCarousel/HomeCustomeSayCarousel'
 import { AiFillPlayCircle } from 'react-icons/ai'
-import { MdEmail} from 'react-icons/md'
+import SpecialSIgnUp from '../../Components/SpecialSIgnUp/SpecialSIgnUp'
 document.title = 'Home'
 export default function Home() {
 
@@ -100,22 +100,7 @@ export default function Home() {
         <SectionsTitle title={'THE BLOG'} titleColor={'black'} subTitle={'Latest News'} />
       </section>
       <HomeRestaurantPropertyOrBlogs type={'blogs'} badge={true} btnTitle={'CONTINUE READING'} />
-      <section className=" home-special-signup mt-5 py-5">
-        <section className="row w-50 mx-auto d-flex-centring py-5">
-          <section className="col-12 col-md-4 d-flex-centring mt-3">
-            <section className="h4 home-special-signup-title">SPECIALS SIGN UP</section>
-          </section>
-          <section className="col-12 col-md-4 d-flex-centring mt-3 home-special-signup-input-container position-relative">
-            <input type="text" placeholder='Email' className='form-control w-100' />
-            <section className=' position-absolute special-sign-up-icon'>
-              <MdEmail />
-            </section>
-          </section>
-          <section className="col-12 col-md-4 d-flex-centring mt-3">
-            <Link className='btn home-special-signup-btn'>Sign-Up</Link>
-          </section>
-        </section>
-      </section>
+     <SpecialSIgnUp />
     </>
   )
 }

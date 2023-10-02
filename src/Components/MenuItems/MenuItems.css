@@ -1,0 +1,23 @@
+.food-name{
+       color: #444;
+       cursor: pointer;
+       transition: all .5s;
+       white-space: nowrap;
+       padding: 0;
+}
+.food-name:hover{
+       color: red;
+}
+.food-price{
+       font-size: 1.5rem;
+}
+.food-infos{
+       font-size: .9rem;
+}
+.dots-container{
+       width:auto !important;
+       overflow: hidden;
+}
+.dots{
+       color: #999;
+}

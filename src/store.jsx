@@ -50,6 +50,36 @@ let store ={
               "img/photo-gallery-10.jpg.webp",
               "img/photo-gallery-11.jpg.webp",
               "img/photo-gallery-12.jpg.webp",
-       ]
+       ],
+       menu:{
+              starters:{title:'STARTERS',foods:[
+                     {name:'PINE NUT SBRISALONA',price:'29.79',desc:'Sed fermentum eros vitae eros'},
+                     {name:'AENEAN EU',price:'19.35',desc:'Feugiat maximus neque pharetra'},
+                     {name:'SED FEUGIAT',price:'12.19',desc:'Proin lacinia nisl ut ultricies posuere nulla'},
+                     {name:'CONSECTETUR',price:'21.89',desc:'Etiam cursus facilisis tortor'},
+              ]},
+              drinks:{title:'DRINKS',foods:[
+                     {name:'VIVAMUS PRETIUM',price:'29.79',desc:'Sed fermentum eros vitae eros'},
+                     {name:'DUIS PHARETRA LIGULA',price:'19.35',desc:'Feugiat maximus neque pharetra'},
+                     {name:'IN EU DOLOR',price:'53.34',desc:'Proin lacinia nisl ut ultricies posuere nulla'},
+                     {name:'FEUGIAT MAXIMUS',price:'62.45',desc:'Sed fermentum eros vitae eros'},
+              ]},
+              main:{title:'MAIN',foods:[
+                     {name:'DUIS SED ALIQUET',price:'31.18',desc:'Proin lacinia nisl ut ultricies posuere nulla'},
+                     {name:'SUSPENDISSE',price:'70.25',desc:'Feugiat maximus neque pharetra'},
+                     {name:'SCELERISQUE SED',price:'36.19',desc:'Etiam cursus facilisis tortor'},
+                     {name:'MOLLIS NULLA',price:'19.50',desc:'Proin lacinia nisl ut ultricies posuere nulla'},
+                     {name:'CONVALLIS AUGUE',price:'29.15',desc:'Sed fermentum eros vitae eros'},
+                     {name:'MAECENAS TRISTIQUE',price:'29.79',desc:'Feugiat maximus neque pharetra'},
+                     {name:'DUIS TINCIDUNT',price:'19.35',desc:'Proin lacinia nisl ut ultricies posuere nulla'},
+              ]},
+              dessert:{title:'DESSERT',foods:[
+                     {name:'TEMPUS ALIQUET',price:'9.79',desc:'Proin lacinia nisl ut ultricies posuere nulla'},
+                     {name:'SCELERISQUE',price:'19.35',desc:'Sed fermentum eros vitae eros'},
+                     {name:'CRAS MAXIMUS',price:'5.79',desc:'Duis pharetra ligula at urna dignissim'},
+              ]},
+             }
+       
+
 }
 export default store

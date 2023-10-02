@@ -14,7 +14,7 @@ export default function Footer() {
        <section className="h4 footer-title mb-4">CONTACT US</section>
        <ul className='footer-list'>
               <li className='footer-item my-2 cp'>
-                     <FaLocationDot />  Tehran-Gholhak
+                     <FaLocationDot />  Iran-Tehran-Gholhak
               </li>
               <li className='footer-item my-2 cp'>
                      <FiPhoneCall />  (+98) 9195805686
