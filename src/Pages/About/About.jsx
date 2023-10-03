@@ -3,6 +3,7 @@ import './About.css'
 import SpecialSignUp from './../../Components/SpecialSIgnUp/SpecialSIgnUp'
 import SectionsTitle from '../../Components/sectionsTitle/sectionsTitle'
 import { AiFillPlayCircle } from 'react-icons/ai'
+import ChefBox from '../../Components/ChefBox/ChefBox'
 export default function About() {
        return (
               <>
@@ -49,8 +50,11 @@ export default function About() {
                             
                      </div>
                      <div className="about-page-second-bg"></div>
-                     <div className="our-chef">
+                     <div className="our-chef d-flex-centring flex-column py-5">
                             <SectionsTitle title={'CHEF'} subTitle={'Meet Our'} titleColor={'black'} />
+                            <div className="row chef-boxes-container mx-auto">
+                                   <ChefBox />
+                           </div>
                      </div>
                      <SpecialSignUp />
               </>

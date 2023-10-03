@@ -125,7 +125,12 @@ let store = {
               food: ['img/Gallary/photo-gallery-14.jpg.webp', 'img/Gallary/photo-gallery-16.jpg.webp', 'img/Gallary/photo-gallery-17.jpg.webp'],
               events: ['img/Gallary/photo-gallery-13.jpg.webp', 'img/Gallary/photo-gallery-15.jpg.webp', 'img/Gallary/photo-gallery-21.jpg.webp'],
               vipGhests: ['img/Gallary/photo-gallery-13.jpg.webp', 'img/Gallary/photo-gallery-18.jpg.webp'],
-       }
+       },
+       chefs:[
+              {name:'Joyce Bowman',title:'CHEF',desc:'Donec porta eleifend mauris ut effici-tur. Quisque non velit vestibulum, lob-ortis mi eget, rhoncus nunc',imgSrc:"img/about/avatar-02.jpg.webp"},
+              {name:'Peter Hart',title:'CHEF',desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies felis a sem tempus tempus.',imgSrc:"img/about/avatar-03.jpg.webp"},
+              {name:'Jack Sparrow',title:'CHEF',desc:'Phasellus aliquam libero a nisi varius, vitae placerat sem aliquet. Ut at velit nec ipsum iaculis posuere quis in sapien',imgSrc:"img/about/avatar-05.jpg.webp"},
+       ]
 
 
 }

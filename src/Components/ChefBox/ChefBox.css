@@ -1,0 +1,35 @@
+.our-chef-box{
+       border: 2px solid rgba(128, 128, 128, 0.29);
+       border-radius: 1rem;
+       width: 90%;
+       height: 40vh;
+       margin: 10vh auto;
+}
+.chef-pic-container{
+    width: 25%;
+    height: 40%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid red;
+    top: -20%;
+}
+.chef-pic{
+      transition: all .5s;
+      cursor: pointer;
+}
+.chef-pic:hover{
+       transform: scale(1.2);
+}
+.chef-name{
+       margin-top: 10%;
+     font-size: 1.3rem;
+     font-weight: 700;
+     cursor: pointer;
+     transition: all .5s;
+}
+.chef-name:hover{
+       color: red;
+}
+.chef-box-title{
+   margin-top: 10%;
+}
