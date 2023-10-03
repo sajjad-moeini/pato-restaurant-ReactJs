@@ -4,6 +4,7 @@ import Menu from "./Pages/Menu/Menu";
 import store from "./store";
 import Reservation from "./Pages/Reservation/Reservation";
 import GallaryPageImageGen from './Components/GallaryPageImageGen/GallaryPageImageGen'
+import About from "./Pages/About/About";
 
 const routes = [
        { path: '/' , element: <Home />},
@@ -16,6 +17,7 @@ const routes = [
               {path:'events',element: <GallaryPageImageGen type={store.menuItems.events} />},
               {path:'vipGhests',element: <GallaryPageImageGen type={store.menuItems.vipGhests} />},
        ]},
+       { path: '/about' , element: <About/>},
 ]
 
 export default routes

@@ -13,7 +13,6 @@ const router = useRoutes(routes)
     <>
       <Navbarr />
       <div className='main-container'>
-
       {router}
       </div>
       <Footer/>
