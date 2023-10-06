@@ -1,6 +1,7 @@
 import React from 'react'
 import './ArticleBox.css'
 import Btn from '../Btn/Btn'
+import { Link } from 'react-router-dom'
 export default function ArticleBox({articles}) {
        console.log(articles)
        return (
@@ -15,9 +16,9 @@ export default function ArticleBox({articles}) {
                                                         <div className='text-light'>{article.date}</div>
                                                  </div>
                                           </div>
-                                          <div className="blog-article-title ls">
+                                          <Link className="blog-article-title ls" to={`./${article.id}`}>
                                                  {article.title}
-                                          </div>
+                                          </Link>
                                           <span className='blog-article-inf text-secondary'>
                                                  by Admin |
                                                  12 December, 2018 |
@@ -28,7 +29,7 @@ export default function ArticleBox({articles}) {
                                                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius
                                           </p>
                                           <div className="blog-article-btn-container ">
-                                                 <Btn title={'CONTINUE READING'} data-id={article.id} />
+                                                 <Btn title={'CONTINUE READING'}  href={`${article.id}`} />
                                           </div>
                                    </div>
                             ))
