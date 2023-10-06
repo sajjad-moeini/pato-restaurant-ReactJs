@@ -139,6 +139,10 @@ let store = {
                      {id:'4',title:'BEST PLACES FOR WINE',img:'img/blog/blog-07.jpg.webp',date:'Dec,2018',day:'15'},
                      {id:'5',title:'BEST PLACES FOR WINE',img:'img/blog/blog-10.jpg.webp',date:'Dec,2018',day:'12'},
               ],
+              mainPageBreadcrumb:[
+                     {title:'Home' , href:'/'},
+                     {title:'Blog' , href:'/blog'},
+              ]
        }
 
 
