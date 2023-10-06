@@ -21,11 +21,23 @@
 }
 .blog-search-icon-container{
        right: 0;
-       width: 10%;
+       width: 15%;
        height: 100%;
-       font-size: 1.5rem;
+}
+.blog-search-icon{
+       font-size: 1.5rem !important;
 }
 .blog-category-item{
        color: #444;
        border-bottom: 1px solid #44444461;      
+}
+.archive-title{
+       color: #444;
+     transition: all .5s;
+}
+.archive-title:hover{
+       color: red;
+}
+.archive-count{
+       color: #44444482;
 }

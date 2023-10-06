@@ -150,6 +150,16 @@ let store = {
                      {img:'img/blog/blog-13.jpg.webp',title:'STYLE THE WEDDING PARTY',date:'May 28, 2017'},
                      {img:'img/blog/blog-14.jpg.webp',title:'COOKING RECIPE DELICIOUS',date:'May 25, 2017'},
                      {img:'img/blog/blog-15.jpg.webp',title:'PIZZA IS PREPARED FRESH',date:'May 2, 2017'},
+              ],
+              archives:[
+                     {title:'ULY 2018',count:'(9)'},
+                     {title:'JUNE 2018',count:'(39)'},
+                     {title:'MAY 2018',count:'(29)'},
+                     {title:'APRIL 2018',count:'(35)'},
+                     {title:'MARCH 2018',count:'(22)'},
+                     {title:'FEBRUARY 2018',count:'(32)'},
+                     {title:'JANUARY 2018',count:'(21)'},
+                     {title:'DECEMBER 2018',count:'(26)'},
               ]
        }
 

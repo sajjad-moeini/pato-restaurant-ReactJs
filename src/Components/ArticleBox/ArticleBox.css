@@ -23,6 +23,7 @@
        padding: .5rem .4rem;
 }
 .blog-article-title{
+       width: fit-content;
        font-size: 1.5rem;
        font-weight: 500;
        padding: 1.5vh 0;
