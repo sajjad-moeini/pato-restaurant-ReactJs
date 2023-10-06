@@ -4,14 +4,17 @@ import store from '../../store'
 import ArticleBox from '../../Components/ArticleBox/ArticleBox'
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { Link } from 'react-router-dom';
-
+import { BiSearchAlt } from 'react-icons/bi'
+import BlogMostPopularSection from '../../Components/BlogMostPopularSection/BlogMostPopularSection';
 
 export default function Blog() {
        const [articles, setArticles] = useState([])
        const [breadCrumb, setBreadCrumb] = useState([])
+       const [blogCategory, setBlogCategory] = useState([])
        useEffect(() => {
               setArticles([...store.blog.articles])
               setBreadCrumb([...store.blog.mainPageBreadcrumb])
+              setBlogCategory([...store.blog.category])
        }, [])
        return (
               <>
@@ -20,12 +23,10 @@ export default function Blog() {
                      </div>
                      <div className='blogPage-beadCrumb-container'>
                             <Breadcrumb>
-                                   {breadCrumb ? breadCrumb.map((item, index)=>(
-                                          <Breadcrumb.Item key={index} >
-                                          <Link to={item.href} className={item.title == 'Blog' ? 'activeCrumb' : null}>
-                                                 {item.title}
-                                          </Link>
-                                   </Breadcrumb.Item>
+                                   {breadCrumb ? breadCrumb.map((item, index) => (
+                                                 <Link to={item.href} key={index} className={item.title == 'Blog' ? 'activeCrumb breadCrubmb-it breadcrumb-item' : 'breadCrubmb-it breadcrumb-item'}>
+                                                        {item.title}
+                                                 </Link>
                                    )) : null}
                             </Breadcrumb>
                      </div>
@@ -34,7 +35,30 @@ export default function Blog() {
                             <div className="col-12 col-sm-8 order-2 order-sm-1 blog-articles-container">
                                    {articles.length > 0 ? <ArticleBox articles={articles} /> : null}
                             </div>
-                            <div className="col-12 col-sm-4 order-1 order-sm-2">2222</div>
+                            <div className="col-12 col-sm-4 order-1 order-sm-2">
+                                   <div className="blog-page-searchbar-container position-relative row mx-auto mt-4">
+                                          <input type="text" className='form-control px-3 py-1 bg-light' placeholder='Search' />
+                                          <div className=' position-absolute blog-search-icon-container d-flex-centring'>
+                                                 <BiSearchAlt />
+                                          </div>
+                                   </div>
+                                   <div className='blog-category'>
+                                          <div className="h4 ms-4 my-3 ls mb-5">CATEGORIES</div>
+                                          <div className=' d-flex flex-column mx-4'>
+                                          {blogCategory ? (
+                                                 blogCategory.map((item, index) => (
+                                                        <Link to={'/blog'} className='blog-category-item my-2' key={index}>
+                                                               {item}
+                                                        </Link>
+                                                 ))
+                                          ) : null}
+                                          </div>
+                                   </div>
+                                   <div className='blog-most-popular mt-5'>
+                                   <div className="h4 ms-4 my-3 ls mb-5">MOST POPULAR</div>
+                                   </div>
+                                   <BlogMostPopularSection />
+                            </div>
                      </div>
               </>
        )

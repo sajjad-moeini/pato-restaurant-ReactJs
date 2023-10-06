@@ -10,11 +10,22 @@
        border-bottom: 1px solid rgba(128, 128, 128, 0.521);
        vertical-align: middle;
 }
-.activeCrumb{
+.breadCrubmb-it{
        color: #444;
 }
-@media screen and (min-width: 578px) {
-       .blog-articles-container{
-border-right: 1px solid rgba(128, 128, 128, 0.393);
-       }
+.activeCrumb{
+       color: #44444484;
+}
+.blog-page-searchbar-container{
+       width: 90%;
+}
+.blog-search-icon-container{
+       right: 0;
+       width: 10%;
+       height: 100%;
+       font-size: 1.5rem;
+}
+.blog-category-item{
+       color: #444;
+       border-bottom: 1px solid #44444461;      
 }

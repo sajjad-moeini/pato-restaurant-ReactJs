@@ -142,6 +142,14 @@ let store = {
               mainPageBreadcrumb:[
                      {title:'Home' , href:'/'},
                      {title:'Blog' , href:'/blog'},
+              ],
+              category:['COOKING RECIPE','DELICIOUS FOODS','EVENTS DESIGN','RESTAURANT PLACE','WORDPRESS'],
+              popularPlace:[
+                     {img:'img/blog/blog-11.jpg.webp',title:'BEST PLACES FOR WINE',date:'3 days ago'},
+                     {img:'img/blog/blog-12.jpg.webp',title:'EGGS AND CHEESE',date:'July 2, 2017'},
+                     {img:'img/blog/blog-13.jpg.webp',title:'STYLE THE WEDDING PARTY',date:'May 28, 2017'},
+                     {img:'img/blog/blog-14.jpg.webp',title:'COOKING RECIPE DELICIOUS',date:'May 25, 2017'},
+                     {img:'img/blog/blog-15.jpg.webp',title:'PIZZA IS PREPARED FRESH',date:'May 2, 2017'},
               ]
        }
 
