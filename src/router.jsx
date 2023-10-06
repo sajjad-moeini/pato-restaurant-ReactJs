@@ -5,6 +5,7 @@ import store from "./store";
 import Reservation from "./Pages/Reservation/Reservation";
 import GallaryPageImageGen from './Components/GallaryPageImageGen/GallaryPageImageGen'
 import About from "./Pages/About/About";
+import Blog from "./Pages/Blog/Blog";
 
 const routes = [
        { path: '/' , element: <Home />},
@@ -18,6 +19,7 @@ const routes = [
               {path:'vipGhests',element: <GallaryPageImageGen type={store.menuItems.vipGhests} />},
        ]},
        { path: '/about' , element: <About/>},
+       { path: '/blog' , element: <Blog/>},
 ]
 
 export default routes

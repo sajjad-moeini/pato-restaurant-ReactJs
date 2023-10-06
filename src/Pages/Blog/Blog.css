@@ -1,0 +1,8 @@
+.blog-page-bg{
+       background: url(../../../public/img/blog/bg-title-page-03.jpg.webp);
+       background-size: cover;
+       height: 75vh;
+       width: 100%;
+       font-size: 3.5rem;
+}
+

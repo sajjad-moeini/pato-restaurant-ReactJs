@@ -130,7 +130,16 @@ let store = {
               {name:'Joyce Bowman',title:'CHEF',desc:'Donec porta eleifend mauris ut effici-tur. Quisque non velit vestibulum, lob-ortis mi eget, rhoncus nunc',imgSrc:"img/about/avatar-02.jpg.webp"},
               {name:'Peter Hart',title:'CHEF',desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies felis a sem tempus tempus.',imgSrc:"img/about/avatar-03.jpg.webp"},
               {name:'Jack Sparrow',title:'CHEF',desc:'Phasellus aliquam libero a nisi varius, vitae placerat sem aliquet. Ut at velit nec ipsum iaculis posuere quis in sapien',imgSrc:"img/about/avatar-05.jpg.webp"},
-       ]
+       ],
+       blog:{
+              articles:[
+                     {id:'1',title:'COOKING RECIPE DELICIOUS',img:'img/blog/blog-05.jpg.webp',date:'Dec,2018',day:'28'},
+                     {id:'2',title:'PIZZA IS PREPARED FRESH',img:'img/blog/blog-06.jpg.webp',date:'Dec,2018',day:'20'},
+                     {id:'3',title:'STYLE THE WEDDING PARTY',img:'img/blog/blog-04.jpg.webp',date:'Dec,2018',day:'16'},
+                     {id:'4',title:'BEST PLACES FOR WINE',img:'img/blog/blog-07.jpg.webp',date:'Dec,2018',day:'15'},
+                     {id:'5',title:'BEST PLACES FOR WINE',img:'img/blog/blog-10.jpg.webp',date:'Dec,2018',day:'12'},
+              ],
+       }
 
 
 }
