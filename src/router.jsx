@@ -8,6 +8,7 @@ import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
 import ArticleBox from "./Components/ArticleBox/ArticleBox";
 import BlogSingleArticles from "./Components/BlogSingleArticles/BlogSingleArticles";
+import Contact from "./Pages/Contact/Contact";
 
 const routes = [
        { path: '/' , element: <Home />},
@@ -25,6 +26,7 @@ const routes = [
               {path:'Article',element: <ArticleBox  />},
               {path:'Article/*',element: <BlogSingleArticles />},
        ]},
+       { path: '/contact' , element: <Contact/>},
       
 ]
 

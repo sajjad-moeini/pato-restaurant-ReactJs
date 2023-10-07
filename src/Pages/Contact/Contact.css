@@ -1,0 +1,37 @@
+.contact-bg{
+       background: url(../../../public/img/contact/bg-title-page-02.jpg.webp);
+       background-size: cover;
+       height: 75vh;
+       font-size: 3.5rem;
+}
+.contact-container{
+       background-color: #9999995f;
+}
+.contact-us-wrapper{
+       width: 60%;
+}
+.contact-us-title{
+       font-size: 1.3rem;
+       font-weight: 600;
+       white-space: nowrap;
+}
+.contact-us-submit-btn{
+       background-color: #212121;
+       color: #fff;
+}
+.contact-us-submit-btn:hover{
+       background-color: rgb(184, 7, 7);
+       color: #fff;
+}
+.my-info-subtitle{
+       font-size: .9rem;
+       font-weight: 500;
+}
+.my-info-icon{
+       font-size: 2rem;
+}
+@media screen and (max-width:578px) {
+       .contact-us-wrapper{
+              width: 90%;
+       }
+}
