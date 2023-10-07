@@ -1,0 +1,22 @@
+.blog-most-popular-box-img{
+       width: 80px;
+       height: 80px;
+       border-radius: 1.2rem;
+       }
+       .blog-most-popular-box-title{
+              color: #313131;
+              cursor: pointer;
+              transition: all .5s;
+       }
+       .blog-most-popular-box-title:hover{
+              color: red;
+       }
+       .blog-most-popular-box-date{
+              font-size: .9rem;
+              color: #44444498;
+       }
+       @media screen and (min-width: 578px) {
+              .blog-articles-container{
+       border-right: 1px solid rgba(128, 128, 128, 0.393);
+              }
+       }

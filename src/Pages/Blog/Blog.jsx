@@ -3,7 +3,7 @@ import './Blog.css'
 import store from '../../store'
 import ArticleBox from '../../Components/ArticleBox/ArticleBox'
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi'
 import BlogMostPopularSection from '../../Components/BlogMostPopularSection/BlogMostPopularSection';
 
@@ -13,6 +13,7 @@ export default function Blog() {
        const [blogCategory, setBlogCategory] = useState([])
        const [archives,setArchives] = useState([])
        useEffect(() => {
+              document.title = 'Blog'
               setArticles([...store.blog.articles])
               setBreadCrumb([...store.blog.mainPageBreadcrumb])
               setBlogCategory([...store.blog.category])
@@ -35,7 +36,7 @@ export default function Blog() {
 
                      <div className="row">
                             <div className="col-12 col-sm-8 order-2 order-sm-1 blog-articles-container">
-                                   {articles.length > 0 ? <ArticleBox articles={articles} /> : null}
+                            <Outlet />
                             </div>
                             <div className="col-12 col-sm-4 order-1 px-5">
                                    <div className="blog-page-searchbar-container position-relative row mx-auto mt-4">
@@ -64,7 +65,7 @@ export default function Blog() {
                                    <div className='blog-archive-container px-4'>
                                           {
                                                  archives ? archives.map((archive,index)=>(
-                                                        <div className="d-flex justify-content-between">
+                                                        <div className="d-flex justify-content-between" key={index}>
                                                         <Link className='archive-title'>{archive.title}</Link>
                                                         <span className='archive-count'>{archive.count}</span>
                                                  </div>

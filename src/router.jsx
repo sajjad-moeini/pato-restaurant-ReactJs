@@ -6,6 +6,8 @@ import Reservation from "./Pages/Reservation/Reservation";
 import GallaryPageImageGen from './Components/GallaryPageImageGen/GallaryPageImageGen'
 import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
+import ArticleBox from "./Components/ArticleBox/ArticleBox";
+import BlogSingleArticles from "./Components/BlogSingleArticles/BlogSingleArticles";
 
 const routes = [
        { path: '/' , element: <Home />},
@@ -19,7 +21,11 @@ const routes = [
               {path:'vipGhests',element: <GallaryPageImageGen type={store.menuItems.vipGhests} />},
        ]},
        { path: '/about' , element: <About/>},
-       { path: '/blog' , element: <Blog/>},
+       { path: '/blog' , element: <Blog/>,children:[
+              {path:'Article',element: <ArticleBox  />},
+              {path:'Article/*',element: <BlogSingleArticles />},
+       ]},
+      
 ]
 
 export default routes

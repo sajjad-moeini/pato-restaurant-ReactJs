@@ -15,6 +15,8 @@ export default function Navbarr() {
   window.onload = () => {
     if (document.title == 'Gallary') {
       setIsGallaryPage(true)
+    }else if(document.title == 'Blog'){
+      setIsGallaryPage(true)
     }
   }
   
