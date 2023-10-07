@@ -13,9 +13,7 @@ export default function Navbarr() {
   const [navbarItems,setNavbarItems] = useState([])
   const [isGallaryPage, setIsGallaryPage] = useState( false )
   window.onload = () => {
-    if (document.title == 'Gallary') {
-      setIsGallaryPage(true)
-    }else if(document.title == 'Blog'){
+    if (document.title == 'Gallary' ||document.title == 'Blog' ||document.title == 'Article') {
       setIsGallaryPage(true)
     }
   }

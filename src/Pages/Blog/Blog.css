@@ -41,3 +41,21 @@
 .archive-count{
        color: #44444482;
 }
+.blog-comment-title{
+       cursor: pointer;
+       color: #444;
+       font-size: 1.5rem;
+       font-weight: 600;
+}
+.comment-form-container{
+       width: 90%;
+}
+.comment-submit-btn{
+       background-color: #444;
+       color: #fff;
+       margin-top: -15vh;
+}
+.comment-submit-btn:hover{
+       background-color: rgb(184, 7, 7);
+       color: #fff;
+}

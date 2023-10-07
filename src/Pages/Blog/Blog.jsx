@@ -62,7 +62,7 @@ export default function Blog() {
                                    </div>
                                    <BlogMostPopularSection />
                                    <div className="h4 ms-4 my-3 ls my-5">ARCHIVE</div>
-                                   <div className='blog-archive-container px-4'>
+                                   <div className='blog-archive-container px-4 mb-5'>
                                           {
                                                  archives ? archives.map((archive,index)=>(
                                                         <div className="d-flex justify-content-between" key={index}>

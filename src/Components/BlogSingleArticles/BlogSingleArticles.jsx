@@ -10,6 +10,7 @@ export default function BlogSingleArticles() {
        useEffect(() => {
               setArticleId(+location.pathname.slice(14))
               setArticles([...store.blog.articles])
+              document.title = 'Article'
        }, [])
 
        return (
@@ -36,6 +37,32 @@ export default function BlogSingleArticles() {
                                    <p className='text-secondary  mt-3'>
                                           Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius
                                    </p>
+                            </div>
+                            <div className='article-comments py-5 pbs5'>
+                            <a className="blog-comment-title ls">
+                            LEAVE A COMMENT
+                                   </a>
+                                   <p className='my-3 text-secondary'>
+                                   Your email address will not be published. Required fields are marked *
+                                   </p>
+                                   <div className="comment-form-container py-5">
+                                          <div className="row">
+                                          <div className="col-6">
+                                   <textarea className='form-control h-50 my-2 ' cols="15" rows="10" placeholder='Comment ...'></textarea>
+                                   </div>
+                                   <div className="col-6">
+                                   <input type="text" className='form-control my-2 p-2 col-4' placeholder='Name' />
+                                          <input type="text" className='form-control my-2 p-2 col-4' placeholder='Email' />
+                                          <input type="text" className='form-control my-2 p-2 col-4' placeholder='WebSite' />
+                                   </div>
+                                          </div>
+                                   
+                                   <a href="#" className='btn comment-submit-btn'>
+                                                 Post Comment
+                                          </a>
+                                   </div>
+                                   
+
                             </div>
                             </>
                      ))
