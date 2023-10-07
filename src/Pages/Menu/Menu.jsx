@@ -8,6 +8,7 @@ export default function Menu() {
        const [menuItems, setMenuItems] = useState({})
        useEffect(() => {
               setMenuItems({ ...store.menu })
+              document.title = 'MENU'
        }, [])
        return (
               <>

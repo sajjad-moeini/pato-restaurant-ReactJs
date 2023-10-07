@@ -3,7 +3,9 @@ import './Contact.css'
 import { MdLocationOn } from 'react-icons/md'
 import {FiPhoneCall} from 'react-icons/fi'
 import {BsClockFill} from 'react-icons/bs'
+import { useEffect } from 'react'
 export default function Contact() {
+       useEffect(()=>{document.title = 'CONTACT'},[])
        return (
 
               <div className="contact-container">

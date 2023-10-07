@@ -4,7 +4,9 @@ import SpecialSignUp from './../../Components/SpecialSIgnUp/SpecialSIgnUp'
 import SectionsTitle from '../../Components/sectionsTitle/sectionsTitle'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import ChefBox from '../../Components/ChefBox/ChefBox'
+import { useEffect } from 'react'
 export default function About() {
+       useEffect(()=>{document.title = 'ABOUT'},[])
        return (
               <>
                      <div className="about-page-bg d-flex-centring ls text-light">

@@ -5,8 +5,10 @@ import SectionsTitle from '../../Components/sectionsTitle/sectionsTitle'
 import HomeReservationInputs from '../../Components/HomeReservationInputs/HomeReservationInputs'
 import { Link } from 'react-router-dom'
 import SpecialSIgnUp from './../../Components/SpecialSIgnUp/SpecialSIgnUp'
+import { useEffect } from 'react'
 
 export default function Reservation() {
+       useEffect(()=>{document.title = 'Reservation'},[])
        return (
               <>
                      <section className='reservation-header-bg d-flex-centring ls text-light'>
